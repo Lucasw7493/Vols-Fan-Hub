@@ -1,0 +1,446 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  color: white; 
+  background-color: rgb(45, 45, 45); 
+}
+
+/* Navbar Styles - Used Across All Pages */
+header {
+  background-color: #ff8400; 
+  margin-bottom: -10px; 
+  text-align: center; 
+}
+
+.navbar {
+  background-color: #FF8200; 
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; 
+  color: #fcfafa; 
+  padding: 2px;
+}
+
+.navbar-logo {
+  height: 40px; /* Set the height of the logo */
+  border-radius: 25px; 
+  margin-right: 10px; /* Add some space between the logo and the text */
+}
+
+.nav-link {
+  color: rgb(255, 255, 255); /* Set the color of the links */
+  margin-right: 120px;
+  
+}
+
+ .nav-link:hover {
+  color: #262626; /* Optional: A lighter shade for hover effect */
+}
+
+ .btn-outline-success {
+  color: #FF8200; /* Sets button text color to orange */
+  border-color: #FF8200; /* Sets button border color to orange */
+  background-color: white; /* White background for the search button */
+}
+
+.btn-outline-success:hover {
+  color: white; /* Sets button text color to white on hover */
+  background-color: #FF8200; /* Orange background on hover */
+  border-color: white; /* Sets border color to white on hover */
+}
+
+.navbar .btn-outline-success {
+  color: #FF8200; 
+  background-color: white; 
+  border-color: #FF8200; 
+}
+
+.navbar .btn-outline-success:hover {
+  color: white; /* search bar hover */
+  background-color: #FF8200; 
+  border-color: white; 
+}
+
+.navbar-nav .nav-link.active  {
+ color: rgb(255, 255, 255); 
+}
+
+.btn-outline-success:focus,
+.btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem #4e4e4e; /* Adjusts the focus shadow on the search button*/
+}
+
+.btn-outline-success {
+  padding: 0.150rem 0.22rem; /* Adjusts the padding */
+  font-size: 1rem; /* Adjusts the font size */
+  border-radius: 0.25rem; /* Adjusts the border radius */
+}
+
+/* Custom CSS for the cart icon and badge in index.html */
+.cart-icon {
+  height: 24px; /* Adjust as needed */
+  width: 24px; /* Adjust as needed */
+}
+
+#cart-count.badge.bg-danger.text-dark {
+  background-color: #FF8200 !important; /* Tennessee Orange */
+  color: #ffffff !important; /* White text color */
+}
+
+/* Footer Styles - Used Across All Pages */
+.footer {
+  background-image: url('../images/footer1.jpeg'); 
+  background-size: cover; 
+  background-position: center bottom 15%; /* Center the background image, 15% changes the focal point */
+  color: white; 
+  padding: 10px 0; 
+  text-align: center; 
+  border: 1px solid #FF8200; 
+  border-radius: 5px;
+}
+
+.social-links  {
+  display: inline; /* Displays list items inline */
+  margin-right: 5px; 
+}
+
+/* Custom styles for social icons in footer in index.html */
+ .social-icon {
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%; 
+  border-color: #dbdbdb;
+  border-style: solid;
+  border-width: 1.8px;
+}
+
+/* Custom styles for footer paragraph in index.html */
+.footer p {
+  margin: 0; 
+  font-size: 14px; 
+}
+
+/* Index.html Specific Styles */
+/* Custom styles for carousel captions in index.html */
+.carousel-container, .carousel-caption {
+  background: rgba(0, 0, 0, 0.329); 
+  padding: 1rem; 
+  border-radius: 0.5rem;
+  min-width: 238px;
+}
+
+/* Custom styles for carousel indicators in index.html */
+.carousel-container, #carouselIndicators, .carousel-container, #carousel-Indicators {
+  color: #26262600; /* Hide the carousel page numbers */
+}
+
+/* Custom styles for carousel items in index.html */
+.carousel-container, .carousel-item {
+  max-height: 550px;
+}
+
+/* Custom styles for carousel caption heading in index.html */
+.carousel-container, .carousel-caption h5 {
+  color: #fcfafa; 
+}
+
+/* Custom styles for carousel caption paragraph in index.html */
+.carousel-container, .carousel-caption p {
+  color: #ffffff; 
+}
+
+/* Custom styles for main content */
+main {
+  padding: 20px; 
+}
+
+/* Custom styles for video container in index.html */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border: solid 1px  #FF8200;
+  border-radius: 5px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Store.html Specific Styles */
+/* Custom styles for product grid in store.html */
+.product-grid {
+  display: flex; /* Displays products in a row */
+  flex-wrap: wrap; /* Wraps products to the next line  */
+  gap: 20px; 
+}
+
+/* Custom styles for individual product div in store.html */
+.product-grid div {
+  border: 1px solid #ccc; 
+  padding: 10px; /* Adds padding inside the product divs */
+  width: calc(33.333% - 20px); /* Sets the width of each product div */
+  box-sizing: border-box; 
+}
+
+/* Custom styles for cards in store.html */
+.card {
+  margin-bottom: 20px; 
+}
+
+/* Custom styles for card titles in store.html */
+.card-title {
+  font-size: 1.25rem; 
+}
+
+
+.card-text {
+  font-size: 1rem;
+  color: #262626; 
+}
+
+/* Custom styles for card images in store.html */
+.card-img-top {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+/* Custom styles for checkout button in store.html */
+.cart-container, .checkout-btn {
+  background-color: #ff8400; 
+  color: white; 
+  border: 1px solid #FF8200; 
+}
+
+.cart-container, .checkout-btn:hover {
+  background-color: #e67300; 
+  border: 1px solid #e67300; 
+}
+
+
+
+/* Custom styles for search input field in nav element in index.html */
+header input[type="search"] {
+  color: #FF8200; 
+  background-color: white; 
+}
+
+/* Custom styles for search input placeholder text in nav element in index.html */
+header input[type="search"]::placeholder {
+  color: rgb(91, 91, 91); /* Change placeholder text color */
+}
+
+/* Cart.html Specific Styles */
+/* Custom styles for modal body in cart.html */
+.modal-body {
+  color: #262626; /* Sets text color in the modal body to dark gray */
+}
+
+/* Custom styles for cart items in cart.html */
+.cart-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+/* Custom styles for individual cart item in cart.html */
+.cart-item-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(33.333% - 20px); /* Adjusts the width for a 3-column layout */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.cart-item-main img {
+  width: 100%; 
+  height: auto;
+}
+
+/* Custom styles for cart item details in cart.html */
+.cart-item-details-main {
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+.cart-item-actions-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.cart-item-actions-main ,.btn {
+  margin-left: 10px;
+}
+
+/* Custom styles for dropdown cart items in index.html */
+.cart-item-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.cart-item-dropdown img {
+  width: 50px; /* Different size for dropdown cart page */
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Custom styles for cart item details in dropdown menu in index.html */
+.cart-item-details-dropdown {
+  flex-grow: 1;
+  margin-right: 10px; /* to push the price to the right */
+}
+
+
+.cart-item-price-dropdown {
+  margin-right: 10px; 
+}
+
+
+.cart-item-actions-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.cart-item-actions-dropdown, .btn {
+  margin-left: 10px;
+}
+
+/* Forum.html Specific Styles */
+ .forum-topics div {
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+}
+
+
+/* Custom styles for images in contact-carousel in contact.html */
+.contact-carousel img {
+  max-height: 400px; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+
+.carousel-item {
+  max-height: 525px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Custom styles for form control borders in contact.html */
+.form-control {
+  border: var(--bs-border-width) solid #ff8200;
+}
+
+.form-control:focus {
+  border-color: #dbdbdb;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgb(255, 130, 0);
+}
+
+/* Common Button Styles - Used Across All Pages */
+/* Common button styles, excluding the search button */
+button:not(.btn-outline-success),
+input[type="button"]:not(.btn-outline-success),
+input[type="submit"]:not(.btn-outline-success) {
+  background-color: #ff8400; 
+  color: white; 
+  border: 1px solid #FF8200; 
+}
+
+button:not(.btn-outline-success):hover,
+input[type="button"]:not(.btn-outline-success):hover,
+input[type="submit"]:not(.btn-outline-success):hover {
+  background-color: #e67300;
+  color: white; 
+  border: 1px solid #e67300;
+}
+
+
+/* Custom styles for primary button across all pages */
+.btn-primary {
+  --bs-btn-bg: #ff8200;
+  --bs-btn-border-color: #495057;
+  --bs-btn-hover-bg: #495057;
+  --bs-btn-hover-border-color: #ff8200;
+  --bs-btn-active-bg: #ff8400;
+  --bs-btn-active-border-color: #495057;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  main {
+      padding: 15px;
+      font-size: 1rem;
+  }
+  .navbar-brand {
+      font-size: 1.4rem;
+  }
+  .navbar-nav .nav-link {
+      margin-right: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+      padding: 20px;
+      font-size: 1.1rem;
+  }
+  .navbar-brand {
+      font-size: 1.6rem;
+  }
+  .navbar-nav .nav-link {
+      margin-right: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main {
+      padding: 25px;
+      font-size: 1.2rem;
+  }
+  .navbar-brand {
+      font-size: 1.8rem;
+      padding-left: 1%;
+  }
+  .navbar-nav,.nav-link {
+      margin-right: 100px;
+    
+    }
+    .form.d-flex{
+      margin-left: 25px
+      
+    }
+}

@@ -388,13 +388,14 @@ input[type="submit"]:not(.btn-outline-success):hover {
 
 
 /* Custom styles for primary button across all pages */
-.btn-primary {
+.btn-primary ,.btn-orange{
   --bs-btn-bg: #ff8200;
   --bs-btn-border-color: #495057;
   --bs-btn-hover-bg: #495057;
   --bs-btn-hover-border-color: #ff8200;
   --bs-btn-active-bg: #ff8400;
   --bs-btn-active-border-color: #495057;
+  color: #fcfafa;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -1,9 +1,11 @@
+// Event listener for when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        // Load cart items when the page loads
+        // Load cart items and update cart dropdown when the page loads
         loadCartItems();
         updateCartDropdown();
 
+        // Event listener for the checkout form submission
         const checkoutForm = document.getElementById('checkout-form');
         if (checkoutForm) {
             checkoutForm.addEventListener('submit', function(event) {
@@ -13,11 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
+        // Event listener for when the order complete modal is hidden
         document.getElementById('orderCompleteModal').addEventListener('hidden.bs.modal', function () {
             clearCart();
             window.location.href = 'store.html';
         });
 
+        // Event listener for the return to store button in the modal
         const returnToStoreButton = document.getElementById('returnToStore');
         if (returnToStoreButton) {
             returnToStoreButton.addEventListener('click', function() {
@@ -30,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Function to load cart items from local storage and display them
 function loadCartItems() {
     try {
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -60,6 +65,7 @@ function loadCartItems() {
     }
 }
 
+// Function to remove an item from the cart
 function removeItem(index) {
     try {
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -72,6 +78,7 @@ function removeItem(index) {
     }
 }
 
+// Function to add an item to the cart
 function addToCart(productName, productPrice, productImage) {
     try {
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -84,6 +91,7 @@ function addToCart(productName, productPrice, productImage) {
     }
 }
 
+// Function to update the cart dropdown with the current items
 function updateCartDropdown() {
     try {
         const cartDropdownMenu = document.getElementById('cart-dropdown-menu');
@@ -120,6 +128,7 @@ function updateCartDropdown() {
     }
 }
 
+// Function to clear the cart items from local storage
 function clearCart() {
     try {
         localStorage.removeItem('cartItems');

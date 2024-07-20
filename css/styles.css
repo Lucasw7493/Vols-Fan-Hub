@@ -77,20 +77,20 @@ header {
 }
 
 .btn-outline-success {
-  padding: 0.150rem 0.22rem; /* Adjusts the padding */
-  font-size: 1rem; /* Adjusts the font size */
-  border-radius: 0.25rem; /* Adjusts the border radius */
+  padding: 0.150rem 0.22rem; 
+  font-size: 1rem; 
+  border-radius: 0.25rem; 
 }
 
 /* Custom CSS for the cart icon and badge in index.html */
 .cart-icon {
-  height: 24px; /* Adjust as needed */
-  width: 24px; /* Adjust as needed */
+  height: 24px; 
+  width: 24px; 
 }
 
 #cart-count.badge.bg-danger.text-dark {
-  background-color: #FF8200 !important; /* Tennessee Orange */
-  color: #ffffff !important; /* White text color */
+  background-color: #FF8200 !important; 
+  color: #ffffff !important; 
 }
 
 /* Footer Styles - Used Across All Pages */
@@ -243,13 +243,13 @@ header input[type="search"] {
 
 /* Custom styles for search input placeholder text in nav element in index.html */
 header input[type="search"]::placeholder {
-  color: rgb(91, 91, 91); /* Change placeholder text color */
+  color: rgb(91, 91, 91); 
 }
 
 /* Cart.html Specific Styles */
 /* Custom styles for modal body in cart.html */
 .modal-body {
-  color: #262626; /* Sets text color in the modal body to dark gray */
+  color: #262626; 
 }
 
 /* Custom styles for cart items in cart.html */
